@@ -16,6 +16,11 @@ class ViewController: UIViewController {
         let currentBundle = Bundle(for: ViewController.self)
         let image = UIImage(named: "meme", in: currentBundle, with: .none)
         //let image = UIImage(named: "meme")
+        let imageView = UIImageView(image: image!)
+
+        imageView.frame = CGRect(x: 0, y: 100, width: 400, height: 600)
+        view.addSubview(imageView)
+        
     }
 
 
